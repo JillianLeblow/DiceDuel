@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- GLOBAL SETTINGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Pacifico&family=Questrial&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME SCRIPT -->
+    <script src="https://kit.fontawesome.com/f63f6b9ad3.js" crossorigin="anonymous"></script>
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="dicee.css">
+
+    <!-- CSS STYLES -->
+    <style type="text/css" media="screen">
+      .fouc {display:none;}
+    </style>
+
+    <!-- FOUC JAVASCRIPT -->
+    <!-- <script type="text/javascript">
+      document.documentElement.className = 'js';
+    </script> -->
+
+    <!-- TITLE -->
+    <title>Dice Duel</title>
+
+
+  </head>
+
+  <body>
+
+  <div id="js" class="fouc">
+
+    <header>
+      <h1 id="heading">Dice Duel</h1>
+    </header>
+
+    <button class="refresh-btn" type="button" name="button" onClick="refreshPage()">Refresh Me</button>
+
+    <main>
+      <div class="group player1">
+        <h3 class="player-text">Player 1</h3>
+        <img class="p1-dice" src="images/png/1y.png" alt="yellow dice 1 pip">
+      </div>
+
+      <div class="group player2">
+        <h3 class="player-text">Player 2</h3>
+        <img class="p2-dice" src="images\png\1y.png" alt="yellow dice 1 pip">
+      </div>
+    </main>
+
+    <h2 id="winner-text"><i class="fas fa-flag"></i> Player 1 Wins!</h2>
+
+    <footer>
+      <p>	&#169; Jillian Leblow 2020</p>
+      <div class="flaticon">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+
+  </div>
+  <!-- JAVASCRIPT -->
+  <!-- FOUC SCRIPT -->
+  <script type="text/javascript">
+    let noFouc = document.querySelector('#js');
+     if (noFouc.classList.contains("fouc")){
+       noFouc.classList.remove("fouc");
+     };
+  </script>
+
+  <!-- JS DOC -->
+  <script src="dicee.js" type="text/javascript"></script>
+
+  </body>
+</html>

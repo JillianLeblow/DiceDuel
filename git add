@@ -1,0 +1,34 @@
+[1mdiff --git a/dicee.html b/dicee.html[m
+[1mindex 53ef218..c032308 100644[m
+[1m--- a/dicee.html[m
+[1m+++ b/dicee.html[m
+[36m@@ -40,7 +40,7 @@[m
+       <h1 id="heading">Dice Duel</h1>[m
+     </header>[m
+ [m
+[31m-    <button class="refresh-btn" type="button" name="button" onClick="refreshPage()">Refresh Me</button>[m
+[32m+[m[32m    <button class="refresh-btn" type="button" name="button" onClick="diceRoll()">Roll Dice</button>[m
+ [m
+     <main>[m
+       <div class="group player1">[m
+[1mdiff --git a/dicee.js b/dicee.js[m
+[1mindex d5aafcc..4204bee 100644[m
+[1m--- a/dicee.js[m
+[1m+++ b/dicee.js[m
+[36m@@ -1,7 +1,3 @@[m
+[31m-function refreshPage(){[m
+[31m-    window.location.reload();[m
+[31m-}[m
+[31m-[m
+ let diceRoll = () => {[m
+   let player1Roll = Math.floor(Math.random() * 6) + 1;[m
+   let player2Roll = Math.floor(Math.random() * 6) + 1;[m
+[36m@@ -47,3 +43,8 @@[m [mlet diceRoll = () => {[m
+ }[m
+ [m
+ diceRoll();[m
+[32m+[m
+[32m+[m[32m// Originally had the button refreshing the page but changed it to simply run the function; no longer need this code:[m
+[32m+[m[32m// function refreshPage(){[m
+[32m+[m[32m//     window.location.reload();[m
+[32m+[m[32m// }[m

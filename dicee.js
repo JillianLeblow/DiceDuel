@@ -1,7 +1,3 @@
-function refreshPage(){
-    window.location.reload();
-}
-
 let diceRoll = () => {
   let player1Roll = Math.floor(Math.random() * 6) + 1;
   let player2Roll = Math.floor(Math.random() * 6) + 1;
@@ -47,3 +43,8 @@ let diceRoll = () => {
 }
 
 diceRoll();
+
+// Originally had the button refreshing the page but changed it to simply run the function; no longer need this code:
+// function refreshPage(){
+//     window.location.reload();
+// }

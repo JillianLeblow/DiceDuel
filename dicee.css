@@ -1,11 +1,12 @@
 html {
-  font-family: 'Bangers', cursive;
+  /* font-family: 'Bangers', cursive; */
   background-color: #8ac4d0;
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3 {
+  font-family: 'Lobster', cursive;
   color: #5b5b5b;
   text-align: center;
 }

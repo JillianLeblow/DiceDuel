@@ -42,7 +42,7 @@ let diceRoll = () => {
   }
 }
 
-diceRoll();
+// diceRoll();
 
 // Originally had the button refreshing the page but changed it to simply run the function; no longer need this code:
 // function refreshPage(){
